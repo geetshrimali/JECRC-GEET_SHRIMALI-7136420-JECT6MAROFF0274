@@ -1,0 +1,19 @@
+1774602283714	geckodriver	INFO	Listening on 127.0.0.1:64875
+1774602286759	mozrunner::runner	INFO	Running command: "C:\\Users\\GEET SHRIMALI\\.cache\\selenium\\firefox\\win64\\149.0\\firefox.exe" "--marionette" "--remote-de ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\GEETSH~1\\AppData\\Local\\Temp\\rust_mozprofile8QUBHj"
+Dynamically enable window occlusion 0
+1774602287003	Marionette	INFO	Marionette enabled
+1774602287073	Marionette	INFO	Listening on port 64889
+WebDriver BiDi listening on ws://127.0.0.1:64876
+Read port: 64889
+1774602287228	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: "Experiment visual-card-updates has unknown featureId: newtabRefinedCardsLayout"
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 153 of the JSON data
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 153 of the JSON data
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 153 of the JSON data
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 153 of the JSON data
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 153 of the JSON data
+JavaScript warning: https://sdk.kleekr.com/mediation/native.js?t=492945, line 1: unreachable code after return statement
+1774602292271	Marionette	INFO	Stopped listening on port 64889
+Dynamically enable window occlusion 1
+console.error: Translations: "Failed to run language detection." (new AbortError("Actor 'Translations' destroyed before query 'Translations:GetDocumentElementLang' was resolved", (void 0)))
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.

@@ -1,0 +1,44 @@
+1774602122194	geckodriver	INFO	Listening on 127.0.0.1:50380
+1774602125247	mozrunner::runner	INFO	Running command: "C:\\Users\\GEET SHRIMALI\\.cache\\selenium\\firefox\\win64\\149.0\\firefox.exe" "--marionette" "--remote-de ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\GEETSH~1\\AppData\\Local\\Temp\\rust_mozprofilea2s2Tc"
+Dynamically enable window occlusion 0
+1774602125503	Marionette	INFO	Marionette enabled
+1774602125577	Marionette	INFO	Listening on port 53886
+WebDriver BiDi listening on ws://127.0.0.1:50381
+Read port: 53886
+1774602125714	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: "Experiment visual-card-updates has unknown featureId: newtabRefinedCardsLayout"
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 153 of the JSON data
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 153 of the JSON data
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 153 of the JSON data
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 153 of the JSON data
+JavaScript warning: https://sdk.kleekr.com/mediation/native.js?t=492945, line 1: unreachable code after return statement
+1774602131091	Marionette	INFO	Stopped listening on port 53886
+Dynamically enable window occlusion 1
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-4H06J8XXQH&cx=c&gtm=4e63q0h2, line 463: Script terminated by timeout at:
+ds@https://www.googletagmanager.com/gtag/js?id=G-4H06J8XXQH&cx=c&gtm=4e63q0h2:463:1200
+cs@https://www.googletagmanager.com/gtag/js?id=G-4H06J8XXQH&cx=c&gtm=4e63q0h2:463:1022
+hs@https://www.googletagmanager.com/gtag/js?id=G-4H06J8XXQH&cx=c&gtm=4e63q0h2:468:37
+gs@https://www.googletagmanager.com/gtag/js?id=G-4H06J8XXQH&cx=c&gtm=4e63q0h2:464:42
+tO@https://www.googletagmanager.com/gtag/js?id=G-4H06J8XXQH&cx=c&gtm=4e63q0h2:789:43
+IP@https://www.googletagmanager.com/gtag/js?id=G-4H06J8XXQH&cx=c&gtm=4e63q0h2:823:50
+k.Qs@https://www.googletagmanager.com/gtag/js?id=G-4H06J8XXQH&cx=c&gtm=4e63q0h2:832:29
+k.Ps/</<@https://www.googletagmanager.com/gtag/js?id=G-4H06J8XXQH&cx=c&gtm=4e63q0h2:831:31
+Sl@https://www.googletagmanager.com/gtag/js?id=G-4H06J8XXQH&cx=c&gtm=4e63q0h2:380:194
+Go@https://www.googletagmanager.com/gtag/js?id=G-4H06J8XXQH&cx=c&gtm=4e63q0h2:407:160
+k.Ps/<@https://www.googletagmanager.com/gtag/js?id=G-4H06J8XXQH&cx=c&gtm=4e63q0h2:831:17
+c@https://www.googletagmanager.com/gtag/js?id=G-4H06J8XXQH&cx=c&gtm=4e63q0h2:760:402
+aL@https://www.googletagmanager.com/gtag/js?id=G-4H06J8XXQH&cx=c&gtm=4e63q0h2:761:232
+k.Ps@https://www.googletagmanager.com/gtag/js?id=G-4H06J8XXQH&cx=c&gtm=4e63q0h2:831:3
+b@https://www.googletagmanager.com/gtag/js?id=G-4H06J8XXQH&cx=c&gtm=4e63q0h2:839:817
+u@https://www.googletagmanager.com/gtag/js?id=G-4H06J8XXQH&cx=c&gtm=4e63q0h2:429:190
+Yl@https://www.googletagmanager.com/gtag/js?id=G-4H06J8XXQH&cx=c&gtm=4e63q0h2:382:648
+wq@https://www.googletagmanager.com/gtag/js?id=G-4H06J8XXQH&cx=c&gtm=4e63q0h2:429:287
+vq.prototype.flush@https://www.googletagmanager.com/gtag/js?id=G-4H06J8XXQH&cx=c&gtm=4e63q0h2:433:288
+vq.prototype.push@https://www.googletagmanager.com/gtag/js?id=G-4H06J8XXQH&cx=c&gtm=4e63q0h2:431:379
+lq@https://www.googletagmanager.com/gtag/js?id=G-4H06J8XXQH&cx=c&gtm=4e63q0h2:425:701
+aC.event@https://www.googletagmanager.com/gtag/js?id=G-4H06J8XXQH&cx=c&gtm=4e63q0h2:669:61
+vC@https://www.googletagmanager.com/gtag/js?id=G-4H06J8XXQH&cx=c&gtm=4e63q0h2:675:482
+QB/<@https://www.googletagmanager.com/gtag/js?id=G-4H06J8XXQH&cx=c&gtm=4e63q0h2:678:155
+
+console.error: Translations: "Failed to run language detection." (new AbortError("Actor 'Translations' destroyed before query 'Translations:GetDocumentElementLang' was resolved", (void 0)))
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.

@@ -1,0 +1,60 @@
+1774602368740	geckodriver	INFO	Listening on 127.0.0.1:58214
+1774602371814	mozrunner::runner	INFO	Running command: "C:\\Users\\GEET SHRIMALI\\.cache\\selenium\\firefox\\win64\\149.0\\firefox.exe" "--marionette" "--remote-de ... "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\GEETSH~1\\AppData\\Local\\Temp\\rust_mozprofile9XjrDi"
+Dynamically enable window occlusion 0
+1774602372072	Marionette	INFO	Marionette enabled
+1774602372138	Marionette	INFO	Listening on port 58234
+WebDriver BiDi listening on ws://127.0.0.1:58215
+Read port: 58234
+1774602372295	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: "Experiment visual-card-updates has unknown featureId: newtabRefinedCardsLayout"
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 153 of the JSON data
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 153 of the JSON data
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 153 of the JSON data
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 153 of the JSON data
+JavaScript warning: https://sdk.kleekr.com/mediation/native.js?t=492945, line 1: unreachable code after return statement
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 153 of the JSON data
+JavaScript error: , line 0: SyntaxError: JSON.parse: expected double-quoted property name at line 1 column 153 of the JSON data
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=G-4H06J8XXQH&cx=c&gtm=4e63p1h1, line 172: Script terminated by timeout at:
+Hb@https://www.googletagmanager.com/gtag/js?id=G-4H06J8XXQH&cx=c&gtm=4e63p1h1:172:159
+uq@https://www.googletagmanager.com/gtag/js?id=G-4H06J8XXQH&cx=c&gtm=4e63p1h1:422:91
+vq.prototype.flush@https://www.googletagmanager.com/gtag/js?id=G-4H06J8XXQH&cx=c&gtm=4e63p1h1:429:233
+vq.prototype.push@https://www.googletagmanager.com/gtag/js?id=G-4H06J8XXQH&cx=c&gtm=4e63p1h1:427:379
+lq@https://www.googletagmanager.com/gtag/js?id=G-4H06J8XXQH&cx=c&gtm=4e63p1h1:421:701
+OQ/<@https://www.googletagmanager.com/gtag/js?id=G-4H06J8XXQH&cx=c&gtm=4e63p1h1:836:174
+k.Gq/<@https://www.googletagmanager.com/gtag/js?id=G-4H06J8XXQH&cx=c&gtm=4e63p1h1:779:126
+k.Gq/c/<@https://www.googletagmanager.com/gtag/js?id=G-4H06J8XXQH&cx=c&gtm=4e63p1h1:778:418
+
+JavaScript warning: https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js, line 309: Script terminated by timeout at:
+Pr/a<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:309:79
+N/</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:93:480
+M/this.ie@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:92:990
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:82:523
+wd/</</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:94:303
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:82:523
+Nh/c/</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:147:321
+Ua@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:51:339
+Pa.prototype.flush@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:51:127
+Ta@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:50:483
+Nh/c/</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:147:293
+qc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:83:218
+n.ie@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:82:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:82:523
+sg/</</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:124:525
+Oa.prototype.yc/<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:50:315
+sg/</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:124:534
+qc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:83:218
+n.ie@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:82:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:82:523
+sg/</</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:124:525
+Oa.prototype.yc/<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:50:315
+sg/</</<@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:124:534
+qc.prototype.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:83:218
+n.ie@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:82:756
+n.next@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:82:523
+h@https://pagead2.googlesyndication.com/pagead/managed/js/activeview/current/ufs_web_display.js:95:477
+
+1774602563261	Marionette	INFO	Stopped listening on port 58234
+JavaScript error: resource://gre/modules/PrivateBrowsingUtils.sys.mjs, line 19: TypeError: can't access property "isChromeWindow", aWindow is null
+Dynamically enable window occlusion 1
+console.warn: TopSitesFeed: Failed to fetch data from MARS server: NetworkError when attempting to fetch resource.
+JavaScript error: resource://gre/modules/Sqlite.sys.mjs, line 1128: Error: Connection is not open.

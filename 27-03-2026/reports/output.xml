@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.12.0 on win32)" generated="2026-03-27T15:51:23.612914" rpa="false" schemaversion="5">
+<suite id="s1" name="Action-Chains" source="D:\coding\capg\selenium\27-03-2026\action-chains.robot">
+<test id="s1-t1" name="Scroll-To" line="36">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-27T15:51:23.834614" level="INFO">Opening browser 'chrome' to base url 'https://the-internet.herokuapp.com/'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-27T15:51:23.833612" elapsed="5.285748"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-27T15:51:29.119360" elapsed="0.036326"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-27T15:51:30.156968" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-27T15:51:29.155686" elapsed="1.001282"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath = //a[text() = "Typos"]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-03-27T15:51:30.157390" elapsed="0.289887"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-27T15:51:31.447408" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-27T15:51:30.447277" elapsed="1.000131"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-27T15:51:31.447408" elapsed="2.119773"/>
+</kw>
+<doc>Scroll</doc>
+<status status="PASS" start="2026-03-27T15:51:23.833612" elapsed="9.734601"/>
+</test>
+<doc>action-chains</doc>
+<status status="PASS" start="2026-03-27T15:51:23.613914" elapsed="9.954299"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Action-Chains" id="s1" pass="1" fail="0" skip="0">Action-Chains</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
