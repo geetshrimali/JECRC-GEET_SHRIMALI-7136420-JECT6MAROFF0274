@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.12.0 on win32)" generated="2026-04-10T15:30:05.396736" rpa="false" schemaversion="5">
+<suite id="s1" name="Login" source="D:\coding\capg\robo_framework\tests\functional\login.robot">
+<kw name="Load Environment" owner="common_resources" type="SETUP">
+<kw name="Load Env" owner="env_loader">
+<arg>${ENV}</arg>
+<status status="PASS" start="2026-04-10T15:30:05.540280" elapsed="0.001018"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-10T15:30:05.541298" level="INFO">${url} = https://gullylabs.com/</msg>
+<var>${url}</var>
+<arg>baseurl</arg>
+<status status="PASS" start="2026-04-10T15:30:05.541298" elapsed="0.000000"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-10T15:30:05.541298" level="INFO">${email} = None</msg>
+<var>${email}</var>
+<arg>user_email</arg>
+<status status="PASS" start="2026-04-10T15:30:05.541298" elapsed="0.000000"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-10T15:30:05.542332" level="INFO">${pwd} = Capg@2003</msg>
+<var>${pwd}</var>
+<arg>user_password</arg>
+<status status="PASS" start="2026-04-10T15:30:05.542332" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-10T15:30:05.542332" level="INFO">${BASE_URL} = https://gullylabs.com/</msg>
+<arg>${BASE_URL}</arg>
+<arg>${url}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-10T15:30:05.542332" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-10T15:30:05.543321" level="INFO">${USER_EMAIL} = None</msg>
+<arg>${USER_EMAIL}</arg>
+<arg>${email}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-10T15:30:05.542332" elapsed="0.000989"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-10T15:30:05.543321" level="INFO">${USER_PWD} = Capg@2003</msg>
+<arg>${USER_PWD}</arg>
+<arg>${pwd}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-10T15:30:05.543321" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-04-10T15:30:05.539282" elapsed="0.004039"/>
+</kw>
+<test id="s1-t1" name="TC01 Login" line="11">
+<kw name="open app" owner="common_resources" type="SETUP">
+<msg time="2026-04-10T15:30:05.544314" level="FAIL">Keyword 'common_resources.open app' expected 0 arguments, got 1.</msg>
+<arg>https://gullylabs.com/</arg>
+<doc>opens the application</doc>
+<status status="FAIL" start="2026-04-10T15:30:05.544314" elapsed="0.000000">Keyword 'common_resources.open app' expected 0 arguments, got 1.</status>
+</kw>
+<kw name="close app" owner="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-04-10T15:30:05.545298" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-04-10T15:30:05.544314" elapsed="0.000984"/>
+</kw>
+<doc>Login</doc>
+<tag>functional</tag>
+<status status="FAIL" start="2026-04-10T15:30:05.544314" elapsed="0.000984">Setup failed:
+Keyword 'common_resources.open app' expected 0 arguments, got 1.</status>
+</test>
+<status status="FAIL" start="2026-04-10T15:30:05.397741" elapsed="0.148559"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">functional</stat>
+</tag>
+<suite>
+<stat name="Login" id="s1" pass="0" fail="1" skip="0">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
