@@ -1,0 +1,370 @@
+{
+  "info": {
+    "_postman_id": "cd14767e-5bb1-4866-a52c-fcfd61643dd7",
+    "name": "Pet Store",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53806327",
+    "_collection_link": "https://go.postman.co/collection/53806327-cd14767e-5bb1-4866-a52c-fcfd61643dd7?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "store",
+      "item": [
+        {
+          "name": "Get inventories",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "https://petstore.swagger.io/v2/store/inventory",
+              "protocol": "https",
+              "host": [
+                "petstore",
+                "swagger",
+                "io"
+              ],
+              "path": [
+                "v2",
+                "store",
+                "inventory"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "place order",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/ecmascript",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"id\": 22,\r\n  \"petId\": 8,\r\n  \"quantity\": 4,\r\n  \"shipDate\": \"2026-04-07T07:44:04.568Z\",\r\n  \"status\": \"placed\",\r\n  \"complete\": true\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/store/order",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "store",
+                "order"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "find purchase by id",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {\r",
+                  "    pm.response.to.have.status(200);\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Body matches string\", function () {\r",
+                  "    pm.expect(pm.response.text()).to.include(\"22\");\r",
+                  "});\r",
+                  "\r",
+                  "pm.test(\"Response time is less than 200ms\", function () {\r",
+                  "    pm.expect(pm.response.responseTime).to.be.below(500);\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [],
+                "type": "text/javascript"
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/store/order/22",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "store",
+                "order",
+                "22"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "delete",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/store/order/22",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "store",
+                "order",
+                "22"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "pet",
+      "item": [
+        {
+          "name": "add photo",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"id\": 20,\r\n  \"category\": {\r\n    \"id\": 20,\r\n    \"name\": \"jacob\"\r\n  },\r\n  \"name\": \"jacob\",\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 20,\r\n      \"name\": \"jacob\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/pet",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "pet"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update existing",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"id\": 20,\r\n  \"category\": {\r\n    \"id\": 20,\r\n    \"name\": \"string\"\r\n  },\r\n  \"name\": \"cat\",\r\n  \"photoUrls\": [\r\n    \"string\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 20,\r\n      \"name\": \"string\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/pet",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "pet"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "find by status",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "exec": [
+                  "pm.test(\"Body matches string\", function () {\r",
+                  "    pm.expect(pm.response.text()).to.include(\"20\");\r",
+                  "});\r",
+                  "pm.test(\"Body matches string\", function () {\r",
+                  "    pm.expect(pm.response.text()).to.include(\"20\");\r",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/pet/findByStatus?status=available",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "pet",
+                "findByStatus"
+              ],
+              "query": [
+                {
+                  "key": "status",
+                  "value": "available"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "find by id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{base_url}}/pet/20/hq720.jpg",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "pet",
+                "20",
+                "hq720.jpg"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "update pet",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "urlencoded",
+              "urlencoded": [
+                {
+                  "key": "name",
+                  "value": "mixi",
+                  "type": "text",
+                  "uuid": "6fd077ad-66af-4cf4-8aa3-fb6a05bb1026"
+                },
+                {
+                  "key": "status",
+                  "value": "sold",
+                  "type": "text",
+                  "uuid": "4e0add34-f1a2-4f9c-a0b7-5822cade54b9"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}/pet/20",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "pet",
+                "20"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "upload image",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "additionalMetadata",
+                  "value": "test image",
+                  "type": "text",
+                  "uuid": "f136bb46-560a-4956-b64a-8869667411bb"
+                },
+                {
+                  "key": "file",
+                  "type": "file",
+                  "uuid": "c4a5e2c0-a999-454b-802b-06e49b5c2164",
+                  "src": "postman-cloud:///1f132689-14cc-40b0-a596-fe5633d43bce"
+                }
+              ]
+            },
+            "url": {
+              "raw": "{{base_url}}/pet/20/uploadImage",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "pet",
+                "20",
+                "uploadImage"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "url",
+      "value": ""
+    }
+  ]
+}

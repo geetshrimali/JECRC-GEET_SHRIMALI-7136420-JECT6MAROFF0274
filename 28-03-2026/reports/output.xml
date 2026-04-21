@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.12.0 on win32)" generated="2026-03-28T13:17:47.864649" rpa="false" schemaversion="5">
+<suite id="s1" name="Screenshot" source="D:\coding\capg\selenium\28-03-2026\screenshot.robot">
+<test id="s1-t1" name="Screenshots" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-03-28T13:17:48.089990" level="INFO">Opening browser 'chrome' to base url 'https://in.bookmyshow.com/explore/home/'.</msg>
+<arg>${url}</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-03-28T13:17:48.089990" elapsed="5.576428"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-03-28T13:17:53.666418" elapsed="0.065601"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-28T13:17:54.733578" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-28T13:17:53.732019" elapsed="1.001559"/>
+</kw>
+<kw name="Set Screenshot Directory" owner="SeleniumLibrary">
+<arg>D:\\coding\\capg\\selenium\\28-03-2026/Screenshots</arg>
+<doc>Sets the directory for captured screenshots.</doc>
+<status status="PASS" start="2026-03-28T13:17:54.734584" elapsed="0.000000"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2026-03-28T13:17:54.858865" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Screenshots/ss.jpg"&gt;&lt;img src="../Screenshots/ss.jpg" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-28T13:17:54.858865" level="INFO">C:\Users\GEET SHRIMALI\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webdriver.py:1025: UserWarning: name used for saved screenshot does not match file type. It should end with a `.png` extension
+  return self.get_screenshot_as_file(filename)</msg>
+<arg>ss.jpg</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2026-03-28T13:17:54.735582" elapsed="0.124284"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-28T13:17:57.860375" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-28T13:17:54.859866" elapsed="3.000509"/>
+</kw>
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2026-03-28T13:17:57.968317" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="../Screenshots/dhurandar.jpg"&gt;&lt;img src="../Screenshots/dhurandar.jpg" width="400px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-03-28T13:17:57.968317" level="INFO">C:\Users\GEET SHRIMALI\AppData\Local\Programs\Python\Python312\Lib\site-packages\selenium\webdriver\remote\webelement.py:508: UserWarning: name used for saved screenshot does not match file type. It should end with a `.png` extension
+  warnings.warn(</msg>
+<arg>xpath=//img[@alt="Dhurandhar The Revenge"]</arg>
+<arg>dhurandar.jpg</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="PASS" start="2026-03-28T13:17:57.860375" elapsed="0.108952"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-03-28T13:17:58.969428" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-03-28T13:17:57.969327" elapsed="1.000101"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-03-28T13:17:58.969428" elapsed="2.161157"/>
+</kw>
+<status status="PASS" start="2026-03-28T13:17:48.088988" elapsed="13.042376"/>
+</test>
+<status status="PASS" start="2026-03-28T13:17:47.865649" elapsed="13.265715"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Screenshot" id="s1" pass="1" fail="0" skip="0">Screenshot</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

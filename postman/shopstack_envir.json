@@ -1,0 +1,58 @@
+{
+	"id": "aef807be-2cff-4233-a399-901cc70db112",
+	"name": "shopstack_env",
+	"values": [
+		{
+			"key": "base_url",
+			"value": "https://www.shoppersstack.com/shopping",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "sID",
+			"value": "384601",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "sEmail",
+			"value": "chundawatankit40@gmail.com",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "sPwd",
+			"value": "JohnCena",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "jwtToken",
+			"value": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjaHVuZGF3YXRhbmtpdDQwQGdtYWlsLmNvbSBTSE9QUEVSIiwiZXhwIjoxNzc1ODM0MDExLCJpYXQiOjE3NzU3OTgwMTF9.p8nngdreQMocropqHQLYV3SYtwEBdcb55eO1HMpgvsM",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "addressID",
+			"value": "153220",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "orderID",
+			"value": "72976",
+			"type": "any",
+			"enabled": true
+		},
+		{
+			"key": "reviewId",
+			"value": 28497,
+			"type": "any",
+			"enabled": true
+		}
+	],
+	"color": null,
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2026-04-10T07:34:55.180Z",
+	"_postman_exported_using": "Postman/12.5.5"
+}
