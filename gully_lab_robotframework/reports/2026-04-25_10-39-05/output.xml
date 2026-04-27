@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.12.0 on win32)" generated="2026-04-25T10:39:06.005730" rpa="false" schemaversion="5">
+<suite id="s1" name="Functional" source="D:\coding\capg\gully_lab_robotframework\gully_lab_robotframework\tests\functional">
+<suite id="s1-s1" name="Add Cart" source="D:\coding\capg\gully_lab_robotframework\gully_lab_robotframework\tests\functional\add_cart.robot">
+<kw name="Load Environment" owner="common_resources" type="SETUP">
+<kw name="Load Env" owner="env_loader">
+<arg>${ENV}</arg>
+<status status="PASS" start="2026-04-25T10:39:06.162811" elapsed="0.000000"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-25T10:39:06.164348" level="INFO">${url} = https://gullylabs.com/</msg>
+<var>${url}</var>
+<arg>baseurl</arg>
+<status status="PASS" start="2026-04-25T10:39:06.164348" elapsed="0.000000"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-25T10:39:06.164348" level="INFO">${mail} = sammyharippa@gmail.com</msg>
+<var>${mail}</var>
+<arg>user_email</arg>
+<status status="PASS" start="2026-04-25T10:39:06.164348" elapsed="0.000000"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-25T10:39:06.164348" level="INFO">${pwd} = Capg@2003</msg>
+<var>${pwd}</var>
+<arg>user_password</arg>
+<status status="PASS" start="2026-04-25T10:39:06.164348" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-25T10:39:06.165359" level="INFO">${BASE_URL} = https://gullylabs.com/</msg>
+<arg>${BASE_URL}</arg>
+<arg>${url}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-25T10:39:06.164348" elapsed="0.001011"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-25T10:39:06.165359" level="INFO">${USER_EMAIL} = sammyharippa@gmail.com</msg>
+<arg>${USER_EMAIL}</arg>
+<arg>${mail}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-25T10:39:06.165359" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-25T10:39:06.166358" level="INFO">${USER_PWD} = Capg@2003</msg>
+<arg>${USER_PWD}</arg>
+<arg>${pwd}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-25T10:39:06.165359" elapsed="0.000999"/>
+</kw>
+<status status="PASS" start="2026-04-25T10:39:06.162811" elapsed="0.003547"/>
+</kw>
+<test id="s1-s1-t1" name="TC004 Add product to cart" line="13">
+<kw name="open app" owner="common_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-25T10:39:06.167358" level="INFO">Opening browser 'chrome' to base url 'https://gullylabs.com/'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-25T10:39:06.167358" elapsed="6.121205"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-25T10:39:12.289564" elapsed="0.150736"/>
+</kw>
+<doc>opens the application</doc>
+<status status="PASS" start="2026-04-25T10:39:06.167358" elapsed="6.273942"/>
+</kw>
+<kw name="account_tab" owner="home_pg">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${account}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-04-25T10:39:12.441300" elapsed="0.332697"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-25T10:39:12.774998" level="INFO">Clicking element 'xpath=//shopify-account[@class='hidden lg:flex items-center justify-center']'.</msg>
+<arg>${account}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-25T10:39:12.773997" elapsed="3.982994"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-04-25T10:39:19.758867" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-04-25T10:39:16.756991" elapsed="3.001876"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-04-25T10:39:19.758867" level="INFO">account button clicked</msg>
+<arg>account button clicked</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-04-25T10:39:19.758867" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-04-25T10:39:12.441300" elapsed="7.317567"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-04-25T10:39:25.759613" level="INFO">Slept 6 seconds.</msg>
+<arg>6</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-04-25T10:39:19.758867" elapsed="6.000746"/>
+</kw>
+<kw name="login" owner="login_page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-25T10:39:25.760754" level="INFO">Typing text 'sammyharippa@gmail.com' into text field 'xpath=//input[@id='CustomerEmail']'.</msg>
+<arg>${mail}</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-25T10:39:25.759613" elapsed="0.123929"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-04-25T10:39:25.884543" level="INFO">entering mail</msg>
+<arg>entering mail</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-04-25T10:39:25.883542" elapsed="0.001001"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-25T10:39:25.884543" level="INFO">Typing text 'Capg@2003' into text field 'xpath=//input[@type = 'password']'.</msg>
+<arg>${pass}</arg>
+<arg>${pwd}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-25T10:39:25.884543" elapsed="0.102872"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-04-25T10:39:25.987415" level="INFO">entering password</msg>
+<arg>entering password</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-04-25T10:39:25.987415" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>${button}</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2026-04-25T10:39:25.987415" elapsed="0.022273"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-04-25T10:39:28.010061" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-04-25T10:39:26.009688" elapsed="2.000373"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-25T10:39:28.011118" level="INFO">Clicking element 'xpath=//button[@type = 'submit' and @data-entity-id='Sign']'.</msg>
+<arg>${button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-25T10:39:28.010061" elapsed="3.163171"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-04-25T10:39:31.174233" level="INFO">Submit</msg>
+<arg>Submit</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-04-25T10:39:31.174233" elapsed="0.000000"/>
+</kw>
+<arg>${USER_EMAIL}</arg>
+<arg>${USER_PWD}</arg>
+<status status="PASS" start="2026-04-25T10:39:25.759613" elapsed="5.414620"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-04-25T10:39:32.175808" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-04-25T10:39:31.175253" elapsed="1.000555"/>
+</kw>
+<kw name="Search" owner="search_page">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${search}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-04-25T10:39:32.176347" elapsed="0.033154"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-25T10:39:32.210541" level="INFO">Clicking element 'xpath=(//a[@href='/search'])[2]'.</msg>
+<arg>${search}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-25T10:39:32.209501" elapsed="0.071773"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-04-25T10:39:33.282459" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-04-25T10:39:32.281274" elapsed="1.001691"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-04-25T10:39:33.282965" level="INFO">Typing text 'red' into text field 'xpath=//input[@class='input search__input']'.</msg>
+<arg>${searchbar}</arg>
+<arg>red</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-25T10:39:33.282965" elapsed="0.046253"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-04-25T10:39:35.330013" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-04-25T10:39:33.329218" elapsed="2.000795"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2026-04-25T10:39:35.331027" level="INFO">Sending key(s) ('ENTER',) to xpath=//input[@class='input search__input'] element.</msg>
+<msg time="2026-04-25T10:39:35.607557" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2026-04-25T10:39:35.607557" level="INFO">Releasing special key ENTER.</msg>
+<arg>${searchbar}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2026-04-25T10:39:35.331027" elapsed="3.137185"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-04-25T10:39:41.470858" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-04-25T10:39:38.469210" elapsed="3.001648"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2026-04-25T10:39:41.490404" level="INFO">Current page contains text 'Kumkum Red Socks'.</msg>
+<arg>Kumkum Red Socks</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2026-04-25T10:39:41.470858" elapsed="0.019546"/>
+</kw>
+<status status="PASS" start="2026-04-25T10:39:32.176347" elapsed="9.314057"/>
+</kw>
+<kw name="click_prod" owner="product_page">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${product}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-04-25T10:39:41.491406" elapsed="0.016660"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-25T10:39:41.508066" level="INFO">Clicking element 'xpath=//a[@data-entity-id='/products/gully-number-001-baaz-rapi-burgundy-2']'.</msg>
+<arg>${product}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-25T10:39:41.508066" elapsed="2.826069"/>
+</kw>
+<status status="PASS" start="2026-04-25T10:39:41.490404" elapsed="2.843731"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-04-25T10:39:45.334520" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-04-25T10:39:44.334135" elapsed="1.000385"/>
+</kw>
+<kw name="Gender" owner="product_page">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${gender}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-04-25T10:39:45.334520" elapsed="0.025158"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-25T10:39:45.359678" level="INFO">Clicking element 'xpath=//a[@class='gender-btn button active']'.</msg>
+<arg>${gender}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-25T10:39:45.359678" elapsed="3.008759"/>
+</kw>
+<status status="PASS" start="2026-04-25T10:39:45.334520" elapsed="3.033917"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-04-25T10:39:50.370207" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-04-25T10:39:48.368437" elapsed="2.001770"/>
+</kw>
+<kw name="Gender" owner="product_page">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${gender}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-04-25T10:39:50.371735" elapsed="0.021656"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-25T10:39:50.393391" level="INFO">Clicking element 'xpath=//a[@class='gender-btn button active']'.</msg>
+<arg>${gender}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-25T10:39:50.393391" elapsed="2.550967"/>
+</kw>
+<status status="PASS" start="2026-04-25T10:39:50.371735" elapsed="2.572623"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-04-25T10:39:54.945643" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-04-25T10:39:52.945380" elapsed="2.000263"/>
+</kw>
+<kw name="Size" owner="product_page">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${size_bar}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-04-25T10:39:54.947150" elapsed="0.016806"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2026-04-25T10:39:54.964461" level="INFO">Selecting options from selection list 'xpath=//select[@class='select']' by value UK9.</msg>
+<arg>${size_bar}</arg>
+<arg>UK9</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2026-04-25T10:39:54.963956" elapsed="0.079177"/>
+</kw>
+<status status="PASS" start="2026-04-25T10:39:54.945643" elapsed="0.097490"/>
+</kw>
+<kw name="Cart" owner="product_page">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath=//p[text()='Pairs well with']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2026-04-25T10:39:55.044138" elapsed="0.310878"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${add_to_cart}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-04-25T10:39:55.355016" elapsed="0.024272"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-04-25T10:40:00.379612" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-04-25T10:39:55.379288" elapsed="5.000324"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-04-25T10:40:00.379612" level="INFO">Clicking element 'xpath=(//button[@name='add'])[1]'.</msg>
+<arg>${add_to_cart}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-04-25T10:40:00.379612" elapsed="0.072322"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-04-25T10:40:02.452419" level="INFO">Slept 2 seconds.</msg>
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-04-25T10:40:00.451934" elapsed="2.000485"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-04-25T10:40:07.663563" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-25T10:40:07.663563" level="FAIL">Element 'xpath=//input[@type='number']' not visible after 5 seconds.</msg>
+<arg>${quantity}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-04-25T10:40:02.452419" elapsed="5.212145">Element 'xpath=//input[@type='number']' not visible after 5 seconds.</status>
+</kw>
+<status status="FAIL" start="2026-04-25T10:39:55.043133" elapsed="12.622719">Element 'xpath=//input[@type='number']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-04-25T10:40:07.665852" elapsed="0.000000"/>
+</kw>
+<kw name="Quantity" owner="product_page">
+<status status="NOT RUN" start="2026-04-25T10:40:07.665852" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-04-25T10:40:07.665852" elapsed="0.000000"/>
+</kw>
+<kw name="close app" owner="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-04-25T10:40:07.668399" elapsed="6.291791"/>
+</kw>
+<status status="PASS" start="2026-04-25T10:40:07.667357" elapsed="6.292833"/>
+</kw>
+<doc>add to cart</doc>
+<tag>Functional</tag>
+<status status="FAIL" start="2026-04-25T10:39:06.166358" elapsed="67.794819">Element 'xpath=//input[@type='number']' not visible after 5 seconds.</status>
+</test>
+<status status="FAIL" start="2026-04-25T10:39:06.021790" elapsed="67.939387"/>
+</suite>
+<suite id="s1-s2" name="Login" source="D:\coding\capg\gully_lab_robotframework\gully_lab_robotframework\tests\functional\login.robot">
+<kw name="Load Environment" owner="common_resources" type="SETUP">
+<kw name="Load Env" owner="env_loader">
+<arg>${ENV}</arg>
+<status status="PASS" start="2026-04-25T10:40:13.968727" elapsed="0.001024"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-25T10:40:13.969751" level="INFO">${url} = https://gullylabs.com/</msg>
+<var>${url}</var>
+<arg>baseurl</arg>
+<status status="PASS" start="2026-04-25T10:40:13.969751" elapsed="0.000000"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-25T10:40:13.969751" level="INFO">${mail} = sammyharippa@gmail.com</msg>
+<var>${mail}</var>
+<arg>user_email</arg>
+<status status="PASS" start="2026-04-25T10:40:13.969751" elapsed="0.000000"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-25T10:40:13.969751" level="INFO">${pwd} = Capg@2003</msg>
+<var>${pwd}</var>
+<arg>user_password</arg>
+<status status="PASS" start="2026-04-25T10:40:13.969751" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-25T10:40:13.971256" level="INFO">${BASE_URL} = https://gullylabs.com/</msg>
+<arg>${BASE_URL}</arg>
+<arg>${url}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-25T10:40:13.969751" elapsed="0.001505"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-25T10:40:13.971595" level="INFO">${USER_EMAIL} = sammyharippa@gmail.com</msg>
+<arg>${USER_EMAIL}</arg>
+<arg>${mail}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-25T10:40:13.971256" elapsed="0.000339"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-25T10:40:13.971595" level="INFO">${USER_PWD} = Capg@2003</msg>
+<arg>${USER_PWD}</arg>
+<arg>${pwd}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-25T10:40:13.971595" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-04-25T10:40:13.968727" elapsed="0.002868"/>
+</kw>
+<test id="s1-s2-t1" name="TC001 Successful Login" line="13">
+<kw name="open app" owner="common_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-25T10:40:13.972264" level="INFO">Opening browser 'chrome' to base url 'https://gullylabs.com/'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-25T10:40:13.972264" elapsed="2.903837"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-25T10:40:16.876101" elapsed="0.024050"/>
+</kw>
+<doc>opens the application</doc>
+<status status="PASS" start="2026-04-25T10:40:13.972264" elapsed="2.927887"/>
+</kw>
+<kw name="account_tab" owner="home_pg">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-04-25T10:40:22.035778" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-25T10:40:22.035778" level="FAIL">Element 'xpath=//shopify-account[@class='hidden lg:flex items-center justify-center']' not visible after 5 seconds.</msg>
+<arg>${account}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-04-25T10:40:16.901150" elapsed="5.134628">Element 'xpath=//shopify-account[@class='hidden lg:flex items-center justify-center']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${account}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-04-25T10:40:22.036891" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-04-25T10:40:22.036891" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>account button clicked</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-04-25T10:40:22.036891" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2026-04-25T10:40:16.901150" elapsed="5.135741">Element 'xpath=//shopify-account[@class='hidden lg:flex items-center justify-center']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-04-25T10:40:22.038778" elapsed="0.000000"/>
+</kw>
+<kw name="login" owner="login_page">
+<arg>${USER_EMAIL}</arg>
+<arg>${USER_PWD}</arg>
+<status status="NOT RUN" start="2026-04-25T10:40:22.038778" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-04-25T10:40:22.038778" elapsed="0.000000"/>
+</kw>
+<kw name="close app" owner="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-04-25T10:40:22.040282" elapsed="6.184610"/>
+</kw>
+<status status="PASS" start="2026-04-25T10:40:22.040282" elapsed="6.184610"/>
+</kw>
+<doc>Login</doc>
+<tag>Functional</tag>
+<status status="FAIL" start="2026-04-25T10:40:13.971595" elapsed="14.254296">Element 'xpath=//shopify-account[@class='hidden lg:flex items-center justify-center']' not visible after 5 seconds.</status>
+</test>
+<test id="s1-s2-t2" name="TC007 Login with invalid credentials" line="23">
+<kw name="open app" owner="common_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-25T10:40:28.226892" level="INFO">Opening browser 'chrome' to base url 'https://gullylabs.com/'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-25T10:40:28.226892" elapsed="3.791645"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-25T10:40:32.018537" elapsed="0.038470"/>
+</kw>
+<doc>opens the application</doc>
+<status status="PASS" start="2026-04-25T10:40:28.226892" elapsed="3.831114"/>
+</kw>
+<kw name="account_tab" owner="home_pg">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-04-25T10:40:37.159430" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-25T10:40:37.159430" level="FAIL">Element 'xpath=//shopify-account[@class='hidden lg:flex items-center justify-center']' not visible after 5 seconds.</msg>
+<arg>${account}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-04-25T10:40:32.059005" elapsed="5.100425">Element 'xpath=//shopify-account[@class='hidden lg:flex items-center justify-center']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${account}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-04-25T10:40:37.159430" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-04-25T10:40:37.159430" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>account button clicked</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-04-25T10:40:37.159430" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2026-04-25T10:40:32.059005" elapsed="5.100425">Element 'xpath=//shopify-account[@class='hidden lg:flex items-center justify-center']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-04-25T10:40:37.160546" elapsed="0.000000"/>
+</kw>
+<kw name="login" owner="login_page">
+<arg>${USER_EMAIL}</arg>
+<arg>123</arg>
+<status status="NOT RUN" start="2026-04-25T10:40:37.160546" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-04-25T10:40:37.160546" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//div[@class='alert alert--error flex items-start gap-3 text-sm md:text-base leading-tight']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" start="2026-04-25T10:40:37.161049" elapsed="0.000000"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Incorrect email or password.</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-04-25T10:40:37.161049" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-04-25T10:40:37.161049" elapsed="0.000000"/>
+</kw>
+<kw name="close app" owner="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-04-25T10:40:37.162055" elapsed="6.175060"/>
+</kw>
+<status status="PASS" start="2026-04-25T10:40:37.161049" elapsed="6.176066"/>
+</kw>
+<doc>credentials</doc>
+<tag>Negative</tag>
+<status status="FAIL" start="2026-04-25T10:40:28.225891" elapsed="15.112182">Element 'xpath=//shopify-account[@class='hidden lg:flex items-center justify-center']' not visible after 5 seconds.</status>
+</test>
+<status status="FAIL" start="2026-04-25T10:40:13.962177" elapsed="29.375896"/>
+</suite>
+<suite id="s1-s3" name="Logout" source="D:\coding\capg\gully_lab_robotframework\gully_lab_robotframework\tests\functional\logout.robot">
+<kw name="Load Environment" owner="common_resources" type="SETUP">
+<kw name="Load Env" owner="env_loader">
+<arg>${ENV}</arg>
+<status status="PASS" start="2026-04-25T10:40:43.344669" elapsed="0.001000"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-25T10:40:43.345669" level="INFO">${url} = https://gullylabs.com/</msg>
+<var>${url}</var>
+<arg>baseurl</arg>
+<status status="PASS" start="2026-04-25T10:40:43.345669" elapsed="0.000000"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-25T10:40:43.345669" level="INFO">${mail} = sammyharippa@gmail.com</msg>
+<var>${mail}</var>
+<arg>user_email</arg>
+<status status="PASS" start="2026-04-25T10:40:43.345669" elapsed="0.000000"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-25T10:40:43.345669" level="INFO">${pwd} = Capg@2003</msg>
+<var>${pwd}</var>
+<arg>user_password</arg>
+<status status="PASS" start="2026-04-25T10:40:43.345669" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-25T10:40:43.345669" level="INFO">${BASE_URL} = https://gullylabs.com/</msg>
+<arg>${BASE_URL}</arg>
+<arg>${url}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-25T10:40:43.345669" elapsed="0.001103"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-25T10:40:43.346772" level="INFO">${USER_EMAIL} = sammyharippa@gmail.com</msg>
+<arg>${USER_EMAIL}</arg>
+<arg>${mail}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-25T10:40:43.346772" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-25T10:40:43.346772" level="INFO">${USER_PWD} = Capg@2003</msg>
+<arg>${USER_PWD}</arg>
+<arg>${pwd}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-25T10:40:43.346772" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-04-25T10:40:43.344669" elapsed="0.002103"/>
+</kw>
+<test id="s1-s3-t1" name="TC002 Logout functionality" line="13">
+<kw name="open app" owner="common_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-25T10:40:43.347702" level="INFO">Opening browser 'chrome' to base url 'https://gullylabs.com/'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-25T10:40:43.347702" elapsed="4.188642"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-25T10:40:47.536344" elapsed="0.033753"/>
+</kw>
+<doc>opens the application</doc>
+<status status="PASS" start="2026-04-25T10:40:43.347702" elapsed="4.223414"/>
+</kw>
+<kw name="account_tab" owner="home_pg">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-04-25T10:40:52.698584" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-25T10:40:52.699584" level="FAIL">Element 'xpath=//shopify-account[@class='hidden lg:flex items-center justify-center']' not visible after 5 seconds.</msg>
+<arg>${account}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-04-25T10:40:47.572115" elapsed="5.127469">Element 'xpath=//shopify-account[@class='hidden lg:flex items-center justify-center']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${account}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-04-25T10:40:52.699584" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-04-25T10:40:52.699584" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>account button clicked</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2026-04-25T10:40:52.699584" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2026-04-25T10:40:47.571116" elapsed="5.128468">Element 'xpath=//shopify-account[@class='hidden lg:flex items-center justify-center']' not visible after 5 seconds.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-04-25T10:40:52.700687" elapsed="0.000000"/>
+</kw>
+<kw name="login" owner="login_page">
+<arg>${USER_EMAIL}</arg>
+<arg>${USER_PWD}</arg>
+<status status="NOT RUN" start="2026-04-25T10:40:52.700687" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-04-25T10:40:52.701586" elapsed="0.000000"/>
+</kw>
+<kw name="logout" owner="logout_page">
+<status status="NOT RUN" start="2026-04-25T10:40:52.701586" elapsed="0.000000"/>
+</kw>
+<kw name="close app" owner="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-04-25T10:40:52.701586" elapsed="6.207685"/>
+</kw>
+<status status="PASS" start="2026-04-25T10:40:52.701586" elapsed="6.207685"/>
+</kw>
+<doc>Logout</doc>
+<tag>Functional</tag>
+<status status="FAIL" start="2026-04-25T10:40:43.346772" elapsed="15.562499">Element 'xpath=//shopify-account[@class='hidden lg:flex items-center justify-center']' not visible after 5 seconds.</status>
+</test>
+<status status="FAIL" start="2026-04-25T10:40:43.339579" elapsed="15.570583"/>
+</suite>
+<suite id="s1-s4" name="Search" source="D:\coding\capg\gully_lab_robotframework\gully_lab_robotframework\tests\functional\search.robot">
+<kw name="Load Environment" owner="common_resources" type="SETUP">
+<kw name="Load Env" owner="env_loader">
+<arg>${ENV}</arg>
+<status status="PASS" start="2026-04-25T10:40:58.914162" elapsed="0.000000"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-25T10:40:58.915162" level="INFO">${url} = https://gullylabs.com/</msg>
+<var>${url}</var>
+<arg>baseurl</arg>
+<status status="PASS" start="2026-04-25T10:40:58.915162" elapsed="0.000000"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-25T10:40:58.915162" level="INFO">${mail} = sammyharippa@gmail.com</msg>
+<var>${mail}</var>
+<arg>user_email</arg>
+<status status="PASS" start="2026-04-25T10:40:58.915162" elapsed="0.000000"/>
+</kw>
+<kw name="Get Env" owner="env_loader">
+<msg time="2026-04-25T10:40:58.915162" level="INFO">${pwd} = Capg@2003</msg>
+<var>${pwd}</var>
+<arg>user_password</arg>
+<status status="PASS" start="2026-04-25T10:40:58.915162" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-25T10:40:58.915162" level="INFO">${BASE_URL} = https://gullylabs.com/</msg>
+<arg>${BASE_URL}</arg>
+<arg>${url}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-25T10:40:58.915162" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-25T10:40:58.915162" level="INFO">${USER_EMAIL} = sammyharippa@gmail.com</msg>
+<arg>${USER_EMAIL}</arg>
+<arg>${mail}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-25T10:40:58.915162" elapsed="0.000000"/>
+</kw>
+<kw name="Set Global Variable" owner="BuiltIn">
+<msg time="2026-04-25T10:40:58.916161" level="INFO">${USER_PWD} = Capg@2003</msg>
+<arg>${USER_PWD}</arg>
+<arg>${pwd}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="PASS" start="2026-04-25T10:40:58.915162" elapsed="0.000999"/>
+</kw>
+<status status="PASS" start="2026-04-25T10:40:58.913268" elapsed="0.002893"/>
+</kw>
+<test id="s1-s4-t1" name="TC003 Search product" line="11">
+<kw name="open app" owner="common_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-25T10:40:58.916161" level="INFO">Opening browser 'chrome' to base url 'https://gullylabs.com/'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-25T10:40:58.916161" elapsed="4.168247"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-25T10:41:03.085414" elapsed="0.033839"/>
+</kw>
+<doc>opens the application</doc>
+<status status="PASS" start="2026-04-25T10:40:58.916161" elapsed="4.203092"/>
+</kw>
+<kw name="Search" owner="search_page">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-04-25T10:41:08.323640" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-25T10:41:08.323640" level="FAIL">Element 'xpath=(//a[@href='/search'])[2]' not visible after 5 seconds.</msg>
+<arg>${search}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-04-25T10:41:03.120254" elapsed="5.204494">Element 'xpath=(//a[@href='/search'])[2]' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${search}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-04-25T10:41:08.324748" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-04-25T10:41:08.324748" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${searchbar}</arg>
+<arg>red</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-04-25T10:41:08.324748" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-04-25T10:41:08.325745" elapsed="0.000000"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<arg>${searchbar}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" start="2026-04-25T10:41:08.325745" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-04-25T10:41:08.325745" elapsed="0.000000"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Kumkum Red Socks</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-04-25T10:41:08.325745" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2026-04-25T10:41:03.120254" elapsed="5.205491">Element 'xpath=(//a[@href='/search'])[2]' not visible after 5 seconds.</status>
+</kw>
+<kw name="close app" owner="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-04-25T10:41:08.331259" elapsed="6.210556"/>
+</kw>
+<status status="PASS" start="2026-04-25T10:41:08.330263" elapsed="6.211552"/>
+</kw>
+<doc>product search</doc>
+<tag>Functional</tag>
+<status status="FAIL" start="2026-04-25T10:40:58.916161" elapsed="15.625654">Element 'xpath=(//a[@href='/search'])[2]' not visible after 5 seconds.</status>
+</test>
+<test id="s1-s4-t2" name="TC008 Search non-existing product" line="17">
+<kw name="open app" owner="common_resources" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-04-25T10:41:14.542692" level="INFO">Opening browser 'chrome' to base url 'https://gullylabs.com/'.</msg>
+<arg>${BASE_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-04-25T10:41:14.542692" elapsed="3.922476"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-04-25T10:41:18.465168" elapsed="0.027466"/>
+</kw>
+<doc>opens the application</doc>
+<status status="PASS" start="2026-04-25T10:41:14.542692" elapsed="3.949942"/>
+</kw>
+<kw name="Search" owner="search_page">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<msg time="2026-04-25T10:41:23.620397" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-04-25T10:41:23.620397" level="FAIL">Element 'xpath=(//a[@href='/search'])[2]' not visible after 5 seconds.</msg>
+<arg>${search}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="FAIL" start="2026-04-25T10:41:18.494631" elapsed="5.126840">Element 'xpath=(//a[@href='/search'])[2]' not visible after 5 seconds.</status>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<arg>${search}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-04-25T10:41:23.621471" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-04-25T10:41:23.621471" elapsed="0.000000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${searchbar}</arg>
+<arg>red</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-04-25T10:41:23.621471" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-04-25T10:41:23.621471" elapsed="0.000000"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<arg>${searchbar}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" start="2026-04-25T10:41:23.621471" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-04-25T10:41:23.622465" elapsed="0.000000"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>Kumkum Red Socks</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2026-04-25T10:41:23.622465" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2026-04-25T10:41:18.493632" elapsed="5.128833">Element 'xpath=(//a[@href='/search'])[2]' not visible after 5 seconds.</status>
+</kw>
+<kw name="close app" owner="common_resources" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2026-04-25T10:41:23.623470" elapsed="6.191646"/>
+</kw>
+<status status="PASS" start="2026-04-25T10:41:23.622465" elapsed="6.192651"/>
+</kw>
+<doc>product search</doc>
+<tag>Negative</tag>
+<status status="FAIL" start="2026-04-25T10:41:14.542692" elapsed="15.272424">Element 'xpath=(//a[@href='/search'])[2]' not visible after 5 seconds.</status>
+</test>
+<status status="FAIL" start="2026-04-25T10:40:58.910162" elapsed="30.904954"/>
+</suite>
+<status status="FAIL" start="2026-04-25T10:39:06.005730" elapsed="143.810385"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="6" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="4" skip="0">Functional</stat>
+<stat pass="0" fail="2" skip="0">Negative</stat>
+</tag>
+<suite>
+<stat name="Functional" id="s1" pass="0" fail="6" skip="0">Functional</stat>
+<stat name="Add Cart" id="s1-s1" pass="0" fail="1" skip="0">Functional.Add Cart</stat>
+<stat name="Login" id="s1-s2" pass="0" fail="2" skip="0">Functional.Login</stat>
+<stat name="Logout" id="s1-s3" pass="0" fail="1" skip="0">Functional.Logout</stat>
+<stat name="Search" id="s1-s4" pass="0" fail="2" skip="0">Functional.Search</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

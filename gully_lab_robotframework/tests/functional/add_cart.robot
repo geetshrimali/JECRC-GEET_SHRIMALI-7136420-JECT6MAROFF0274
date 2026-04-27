@@ -1,3 +1,4 @@
+
 *** Settings ***
 Resource  ../../resources/common_resources.robot
 Resource  ../../resources/pages/home_pg.robot

@@ -6,3 +6,4 @@ ${add_to_cart}  xpath=(//button[@name='add'])[1]
 ${quantity}  xpath=//input[@type='number']
 ${close_cart}  xpath=//button[@data-entity-id='Close']
 ${checkout}  xpath=(//button[@name='checkout'])
+${name}  xpath=//p[@class='grow']/descendant::a[@data-entity-id='/products/gully-number-001-baaz-rapi-burgundy-2']

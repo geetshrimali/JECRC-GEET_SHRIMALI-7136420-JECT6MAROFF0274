@@ -5,8 +5,12 @@ Resource  ../../locators/home_pg_loc.robot
 
 *** Keywords ***
 click_prod
-    Wait Until Element Is Visible    ${product}
+    Scroll Element Into View    ${name}
+    Wait Until Element Is Visible    ${name}
+    ${text}=    Get Text    ${name}
+    Set Test Variable    ${text}
     Click Element    ${product}
+    Sleep    1
 
 Size
     Wait Until Element Is Visible    ${size_bar}
@@ -14,12 +18,15 @@ Size
 
 Gender
     Wait Until Element Is Visible    ${gender}
+    Sleep    1
     Click Element    ${gender}
 
 Quantity
     Wait Until Element Is Visible    ${quantity}
     Clear Element Text    ${quantity}
+    Sleep    1
     Input Text    ${quantity}    2
+    Sleep    1
     Press Keys    ${quantity}    ENTER
 
 Cart
