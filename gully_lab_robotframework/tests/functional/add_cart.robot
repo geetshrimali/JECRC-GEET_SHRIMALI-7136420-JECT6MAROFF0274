@@ -27,8 +27,8 @@ TC004 Add product to cart
 
     Gender
     Sleep    2
-    #Gender
-    Sleep    2
+    Gender
+    #Sleep    2
 
     Size
 
