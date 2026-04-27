@@ -8,7 +8,7 @@ Resource  ../../locators/prod_page_loc.robot
 Verify_cart
     Click Element    ${cart}
     Sleep    2
-    Wait Until Page Contains  ${text}
+    Wait Until Page Contains  ${name}
     Sleep    1
 
 Open_cart
