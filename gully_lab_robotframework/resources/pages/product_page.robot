@@ -14,7 +14,7 @@ click_prod
 
 Size
     Wait Until Element Is Visible    ${size_bar}
-    Select From List By Value    ${size_bar}  UK9
+    Select From List By Value    ${size_bar}  UK6
 
 Gender
     Wait Until Element Is Visible    ${gender}
